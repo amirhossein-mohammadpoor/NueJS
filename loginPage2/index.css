@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Shabnam;
+    src: url("./Assets/Fonts/Shabnam.ttf") format('truetype');
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: Shabnam;
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.right {
+    height: 100vh;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.right .sign-up {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    
+}
+
+.right .sign-up a {
+    margin-bottom: 100px;
+}
+
+.right .sign-up form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(203, 203, 203);
+}
+
+.right .sign-up a {
+    text-decoration: none;
+    color: rgb(0, 147, 237);
+    outline: 0;
+    font-size: 10pt;
+}
+
+.right .sign-up h4 {
+    color: black;
+}
+
+.right .sign-up span {
+    font-size: 10pt;
+    margin-bottom: 30px;
+    color: rgb(203, 203, 203);
+}
+
+.right .sign-up form .email {
+    position: relative;
+    border-bottom: 1px rgb(0, 147, 237) solid;
+    margin-bottom: 25px;
+    color: rgb(0, 147, 237);
+}
+
+.right .sign-up form .email input {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    color: rgb(0, 147, 237);
+}
+
+.right .sign-up form .email input::placeholder {
+    color: rgb(0, 147, 237);
+}
+
+.right .sign-up form .email i {
+    position: absolute;
+    left: 0;
+}
+
+.right .sign-up form .password {
+    position: relative;
+    border-bottom: 1px rgb(203, 203, 203) solid;
+    margin-bottom: 25px;
+}
+
+.right .sign-up form .password input {
+    width: 100%;
+    outline: 0;
+    border: 0;
+}
+
+.right .sign-up form .password i {
+    position: absolute;
+    left: 0;
+}
+
+
+.right .sign-up form .security-password {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.right .sign-up form .security-password .pass {
+    position: relative;
+}
+
+.right .sign-up form .security-password .pass input {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px rgb(203, 203, 203) solid;
+}
+
+.right .sign-up form .security-password .pass i {
+    position: absolute;
+    left: 0;
+}
+
+.right .sign-up form .security-password .code {
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.right .sign-up form .security-password .code i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.right .sign-up form button {
+    background-color: rgb(0, 147, 237);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    font-size: 14pt;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.right .sign-up form .remember-me {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end
+}
+
+.right .sign-up form .remember-me input {
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.right .sign-up form lable {
+    font-size: 8pt;
+}
+
+.left {
+    height: 100vh;
+    width: 55vw;
+    background: linear-gradient(to top right,
+            rgb(30, 181, 236),
+            rgb(154, 242, 220));
+    position: relative;
+    overflow: hidden;
+}
+
+.left .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left .radar-angle {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: -50%;
+    left: 50%;
+    opacity: 0.2;
+    transform-origin: 0% 97%;
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.left .circle1 {
+    background: radial-gradient(rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0));
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: expand1 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes expand1 {
+    from {
+        width: 0px;
+        height: 0px;
+        opacity: 0.4;
+    }
+
+    to {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0;
+    }
+}
+
+.left .circle2 {
+    background: radial-gradient(rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0));
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: expand2 3s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes expand2 {
+    from {
+        width: 0px;
+        height: 0px;
+        opacity: 0.4;
+    }
+
+    to {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0;
+    }
+}
+
+.left .circle3 {
+    background: radial-gradient(rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0));
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: expand3 3s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes expand3 {
+    from {
+        width: 0px;
+        height: 0px;
+        opacity: 0.4;
+    }
+
+    to {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0;
+    }
+}
+
+.left span {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translate(50%, 0%);
+    font-size: 12pt;
+}
+
+@media only screen and (max-width: 600px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .right .sign-up {
+        width: 80%;
+    }
+}
