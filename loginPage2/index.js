@@ -1,15 +1,5 @@
 let element;
 
-NueJS.makeLink({
-    rel: "stylesheet",
-    href: "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-});
-
-NueJS.makeLink({
-    rel: "stylesheet",
-    href: "index.css"
-});
-
 element =
     NueJS.createElement("div", { classname: "right" },
         NueJS.createElement("div", { classname: "sign-up" },
@@ -57,3 +47,14 @@ element =
     );
 
 root.append(element);
+
+NueJS.makeLink({
+    rel: "stylesheet",
+    href: "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+});
+
+NueJS.makeLink({
+    rel: "stylesheet",
+    href: "index.css"
+});
+
