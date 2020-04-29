@@ -1,5 +1,4 @@
 const NueJS = {};
-const root = document.getElementById("root");
 
 NueJS.createTextNode = function (text) {
     return document.createTextNode(text);
@@ -24,4 +23,10 @@ NueJS.createElement = function (type, props, ...children) {
 
 NueJS.makeLink = function (data) {
     document.head.append(this.createElement("link", data));
+}
+
+NueJS.render = function (id, elements) {
+	for (let value of elements) {
+		id.append(value)
+	}
 }
