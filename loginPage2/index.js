@@ -1,4 +1,6 @@
 let element;
+const elements = [];
+const root = document.getElementById("root");
 
 element =
     NueJS.createElement("div", { classname: "right" },
@@ -34,7 +36,7 @@ element =
         )
     );
 
-root.append(element);
+elements.push(element);
 
 element =
     NueJS.createElement("left", { classname: "left" },
@@ -46,7 +48,9 @@ element =
         NueJS.createElement("span", {}, "Multi Anti-Viruse & Cybersecurity")
     );
 
-root.append(element);
+elements.push(element);
+
+NueJS.render(root, elements)
 
 NueJS.makeLink({
     rel: "stylesheet",
